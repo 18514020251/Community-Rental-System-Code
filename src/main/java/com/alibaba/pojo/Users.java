@@ -1,0 +1,67 @@
+package com.alibaba.pojo;
+
+import com.alibaba.enums.RoleStatus;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
+import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
+/**
+ * <p>
+ * 
+ * </p>
+ *
+ * @author sister
+ * @since 2025-11-13
+ */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
+@TableName("users")
+@ApiModel(value="Users对象", description="")
+public class Users implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @TableId(value = "user_id", type = IdType.AUTO)
+    private Long userId;
+
+    @TableField("user_name")
+    private String userName;
+
+    @TableField("user_password")
+    private String userPassword;
+
+    @TableField("user_avatar")
+    private String userAvatar;
+
+    @TableField("user_role")
+    private RoleStatus userRole;
+
+    @TableField("user_email")
+    private String userEmail;
+
+    @TableField("phone")
+    private String phone;
+
+    @TableField("created_at")
+    private LocalDateTime createdAt;
+
+    @TableField("login_time")
+    private LocalDateTime loginTime;
+
+    @TableField("is_frozen")
+    private Boolean isFrozen;
+
+    @TableField("is_deleted")
+    private Boolean isDeleted;
+
+
+}
