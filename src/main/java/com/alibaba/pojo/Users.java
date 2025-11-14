@@ -65,5 +65,7 @@ public class Users implements Serializable {
     @TableField("is_deleted")
     private Integer isDeleted;
 
+    private String token;
+
 
 }

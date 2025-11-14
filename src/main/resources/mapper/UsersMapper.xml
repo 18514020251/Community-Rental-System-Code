@@ -31,6 +31,7 @@
             user_id,
             user_name,
             user_avatar,
+            user_password,
             user_role,
             user_email,
             phone,
@@ -41,5 +42,22 @@
         from users
         where
             phone = #{phone}
+    </select>
+    <select id="selectByUserLogin" resultType="com.alibaba.pojo.Users">
+        select
+            user_name,
+            user_avatar,
+            user_role,
+            user_email,
+            user_password,
+            phone,
+            created_at,
+            login_time,
+            is_frozen,
+            is_deleted
+        from users
+        where
+            phone = #{phone}
+            and user_password = #{userPassword}
     </select>
 </mapper>

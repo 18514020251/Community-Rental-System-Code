@@ -22,8 +22,6 @@ import java.util.Date;
 @ApiModel(value = "UsersVo对象", description = "用户展示信息")
 public class UsersVo implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
     @ApiModelProperty(value = "用户ID")
     private Long userId;
 
@@ -49,6 +47,10 @@ public class UsersVo implements Serializable {
     @ApiModelProperty(value = "最后登录时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date loginTime;
+
+    // token
+    @ApiModelProperty(value = "token")
+    private String token;
 
     @ApiModelProperty(value = "是否冻结")
     private Boolean isFrozen;

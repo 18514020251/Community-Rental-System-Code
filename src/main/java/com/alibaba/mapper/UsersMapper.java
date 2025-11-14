@@ -1,7 +1,9 @@
 package com.alibaba.mapper;
 
+import com.alibaba.dto.UsersLoginDto;
 import com.alibaba.dto.UsersRegisterDto;
 import com.alibaba.pojo.Users;
+import com.alibaba.vo.UsersLoginVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -17,4 +19,7 @@ public interface UsersMapper extends BaseMapper<Users> {
    Long usersRegister(UsersRegisterDto usersRegisterDTO);
 
    Users selectByPhone(String phone);
+
+   UsersLoginVo selectByUserLogin(UsersLoginDto usersLoginDto);
+
 }

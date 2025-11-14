@@ -1,5 +1,6 @@
 package com.alibaba.service;
 
+import com.alibaba.dto.UsersLoginDto;
 import com.alibaba.dto.UsersRegisterDto;
 import com.alibaba.pojo.Users;
 import com.alibaba.vo.UsersVo;
@@ -17,4 +18,5 @@ public interface IUsersService extends IService<Users> {
 
     UsersVo usersRegister(UsersRegisterDto usersRegisterDTO);
 
+    UsersVo userPasswordLogin(UsersLoginDto usersLoginDto);
 }

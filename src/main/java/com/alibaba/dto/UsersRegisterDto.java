@@ -28,7 +28,7 @@ public class UsersRegisterDto {
     private String phone;
 
     @ApiModelProperty(value = "邮箱")
-    private String userEmail;  // 添加缺失的字段
+    private String userEmail;
 
     @ApiModelProperty(value = "是否冻结")
     private Boolean isFrozen;
