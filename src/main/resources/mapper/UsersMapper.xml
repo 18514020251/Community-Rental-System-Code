@@ -2,4 +2,44 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.alibaba.mapper.UsersMapper">
 
+    <insert id="usersRegister" parameterType="com.alibaba.dto.UsersRegisterDto"
+            useGeneratedKeys="true" keyProperty="userId">
+        INSERT INTO users(
+        user_password,
+        phone,
+        user_role
+        <if test="userName != null and userName != ''">
+            ,user_name
+        </if>
+        <if test="userEmail != null and userEmail != ''">
+            ,user_email
+        </if>
+        ) VALUES(
+        #{userPassword},
+        #{phone},
+        #{userRole}
+        <if test="userName != null and userName != ''">
+            ,#{userName}
+        </if>
+        <if test="userEmail != null and userEmail != ''">
+            ,#{userEmail}
+        </if>
+        )
+    </insert>
+    <select id="selectByPhone" resultType="com.alibaba.pojo.Users">
+        select
+            user_id,
+            user_name,
+            user_avatar,
+            user_role,
+            user_email,
+            phone,
+            created_at,
+            login_time,
+            is_frozen,
+            is_deleted
+        from users
+        where
+            phone = #{phone}
+    </select>
 </mapper>

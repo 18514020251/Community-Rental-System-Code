@@ -1,16 +1,32 @@
 package com.alibaba.enums;
 
+import com.baomidou.mybatisplus.annotation.EnumValue;
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum RoleStatus {
-    USER(1, "普通用户"),
-    SELLER(2, "商家"),
-    ADMIN(3, "管理员")
-    ;
+    USER("user"),
+    SELLER("seller"),
+    ADMIN("admin");
 
-    private final int value;
-    private final String description;
+    @EnumValue  // 标记这个字段的值存入数据库
+    private final String value;
 
-    RoleStatus(int value, String description) {
+    RoleStatus(String value) {
         this.value = value;
-        this.description = description;
+    }
+
+    @JsonValue  // 标记这个字段在JSON序列化时使用
+    public String getValue() {
+        return value;
+    }
+
+    // 从字符串值获取枚举（重要！）
+    public static RoleStatus getByValue(String value) {
+        for (RoleStatus role : RoleStatus.values()) {
+            if (role.value.equals(value)) {
+                return role;
+            }
+        }
+        return USER; // 默认值
     }
 }

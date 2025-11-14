@@ -3,19 +3,19 @@ spring:
     name: alibaba-ecommerce
   profiles:
     active: dev
-  
+
   # 数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.97.99.243:3306/rental_system?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     username: root
     password: 123
-  
+
   # Redis配置
   redis:
-    host: localhost
+    host: 47.97.99.243
     port: 6379
-    password:
+    password: 123321
     database: 0
     timeout: 3000ms
     lettuce:
@@ -30,11 +30,13 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    enum-handler: com.alibaba.cloud.youxia.handler
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
   global-config:
     db-config:
       id-type: auto
       logic-delete-field: isDeleted
+      enum-column-type: string  # 枚举字段存储为字符串
+
 # 日志配置
 logging:
   level:
