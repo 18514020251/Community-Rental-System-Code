@@ -5,17 +5,25 @@ import com.alibaba.dto.UsersLoginDto;
 import com.alibaba.dto.UsersRegisterByPhoneDto;
 import com.alibaba.dto.UsersRegisterDto;
 import com.alibaba.pojo.Result;
+import com.alibaba.pojo.Users;
 import com.alibaba.service.IUsersService;
+import com.alibaba.utils.JwtUtil;
 import com.alibaba.utils.NullCheckUtil;
 import com.alibaba.utils.ThreadLocalUtil;
+import com.alibaba.vo.UsersLoginVo;
 import com.alibaba.vo.UsersVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.BeanUtils;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
+import java.util.Map;
 
 /**
  * <p>
@@ -47,21 +55,19 @@ public class UsersController {
         // 3. 统一返回格式
         // 4. 异常处理
         userService.usersRegister(usersRegisterDTO);
+
         return Result.success("OK");
     }
 
-    @PostMapping("/phone/captcha")
+    @PostMapping("/captcha")
     @ApiOperation(value = "获取验证码")
     public Result getCaptcha(@RequestParam UsersRegisterByPhoneDto usersRegisterByPhoneDto) {
-
-
         return Result.success("OK");
     }
 
     @PostMapping("/login")
     @ApiOperation(value = "用户登录")
-    @Transactional(readOnly = true) // 添加只读事务
-    public Result userLogin(@RequestBody @Valid UsersLoginDto usersLoginDto) {
+    public Result userLogin(@RequestBody @Valid UsersLoginDto usersLoginDto, HttpServletRequest request) {
         // Controller层主要负责：
         // 1. 参数校验（通过@Valid）
         // 2. 调用Service层
@@ -69,9 +75,10 @@ public class UsersController {
         // 4. 异常处理
         try {
             // 调用Service层进行登录验证
-            UsersVo usersVo = userService.userPasswordLogin(usersLoginDto);
+            UsersLoginVo user = userService.userPasswordLogin(usersLoginDto);
+            UsersVo usersVo = new UsersVo();
+            BeanUtils.copyProperties(user, usersVo);
             return Result.success("登录成功", usersVo);
-
         } catch (RuntimeException e) {
 
             return Result.error(401, e.getMessage());

@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -64,8 +65,5 @@ public class Users implements Serializable {
 
     @TableField("is_deleted")
     private Integer isDeleted;
-
-    private String token;
-
 
 }

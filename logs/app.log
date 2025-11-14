@@ -1677,3 +1677,345 @@ Caused by: java.net.NoRouteToHostException: No route to host: getsockopt
 2025-11-14 13:01:16 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-11-14 13:01:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-11-14 13:01:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 13:01:18 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 11588 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 13:01:18 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 13:01:18 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 13:01:19 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 13:01:19 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 13:01:19 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 13:01:19 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 13:01:19 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 13:01:19 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 13:01:20 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 13:01:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1184 ms
+2025-11-14 13:01:21 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 13:01:21 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 13:01:21 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.253 seconds (process running for 3.852)
+2025-11-14 13:01:24 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 13:01:24 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 13:01:24 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-14 13:01:24 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@236cc04d
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=7, userName=17725431565, userPassword=$2a$10$gWRi5iOBuxNM4GX9m.K70uAak4l8imyExNsEvQT13L0SjL0zBRMe2, userAvatar=null, userRole=USER, userEmail=null, phone=17725431565, createdAt=2025-11-14T11:31, loginTime=null, isFrozen=false, isDeleted=0, token=null)
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$gWRi5iOBuxNM4GX9m.K70uAak4l8imyExNsEvQT13L0SjL0zBRMe2
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 13:01:26 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - token生成成功: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsicm9sZSI6IlVTRVIiLCJwaG9uZSI6IjE3NzI1NDMxNTY1IiwidXNlcklkIjo3LCJ1c2VybmFtZSI6IjE3NzI1NDMxNTY1In0sImV4cCI6MTc2MzEzOTY4Nn0.fonNgai_0CI1R_GoTVS1woiLs1_UEQyju81Aln1E05k
+2025-11-14 13:01:27 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:7
+2025-11-14 13:07:00 [http-nio-8080-exec-4] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: Token失效
+2025-11-14 13:52:24 [http-nio-8080-exec-7] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+### The error may exist in com/alibaba/mapper/UsersMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  user_id,user_name,user_password,user_avatar,user_role,user_email,phone,created_at,login_time,is_frozen,is_deleted,token  FROM users  WHERE is_deleted=0     AND (phone = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+; bad SQL grammar []
+2025-11-14 13:52:35 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 13:52:35 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 13:52:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 13:52:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 13:52:37 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 9376 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 13:52:37 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 13:52:37 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 13:52:38 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 13:52:38 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 13:52:38 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 13:52:38 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 13:52:38 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 13:52:38 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 13:52:38 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 13:52:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1193 ms
+2025-11-14 13:52:40 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 13:52:40 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 13:52:40 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.415 seconds (process running for 4.117)
+2025-11-14 13:52:48 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 13:52:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 13:52:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-14 13:52:49 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 13:52:50 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72c737e7
+2025-11-14 13:52:50 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 13:52:50 [http-nio-8080-exec-1] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+### The error may exist in com/alibaba/mapper/UsersMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  user_id,user_name,user_password,user_avatar,user_role,user_email,phone,created_at,login_time,is_frozen,is_deleted,token  FROM users  WHERE is_deleted=0     AND (phone = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+; bad SQL grammar []
+2025-11-14 13:52:57 [http-nio-8080-exec-5] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+### The error may exist in com/alibaba/mapper/UsersMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  user_id,user_name,user_password,user_avatar,user_role,user_email,phone,created_at,login_time,is_frozen,is_deleted,token  FROM users  WHERE is_deleted=0     AND (phone = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+; bad SQL grammar []
+2025-11-14 13:53:50 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 13:53:50 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 13:53:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 13:53:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 13:54:21 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 19972 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 13:54:21 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 13:54:21 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 13:54:22 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 13:54:22 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 13:54:22 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 13:54:22 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 13:54:22 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 13:54:22 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 13:54:22 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 13:54:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1199 ms
+2025-11-14 13:54:24 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 13:54:24 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 13:54:24 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.193 seconds (process running for 3.637)
+2025-11-14 13:54:28 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 13:54:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 13:54:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-14 13:54:28 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 13:54:29 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70e4b055
+2025-11-14 13:54:29 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 13:54:29 [http-nio-8080-exec-1] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 手机号已存在,请重新注册
+2025-11-14 13:54:33 [http-nio-8080-exec-4] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 手机号已存在,请重新注册
+2025-11-14 13:54:49 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 13:54:50 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=8, userName=17725431566, userPassword=$2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK, userAvatar=null, userRole=USER, userEmail=null, phone=17725431566, createdAt=2025-11-14T13:54:42, loginTime=null, isFrozen=false, isDeleted=0)
+2025-11-14 13:54:50 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 13:54:50 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK
+2025-11-14 13:54:50 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 13:54:50 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - token生成成功: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsicm9sZSI6IlVTRVIiLCJwaG9uZSI6IjE3NzI1NDMxNTY2IiwidXNlcklkIjo4LCJ1c2VybmFtZSI6IjE3NzI1NDMxNTY2In0sImV4cCI6MTc2MzE0Mjg5MH0.bWsn0IgiiL5Q32kn4MNZdDRfG87jGdjFSPF8GDbv5aI
+2025-11-14 13:54:50 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:8
+2025-11-14 14:06:44 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 14:06:44 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 14:06:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 14:06:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 14:22:10 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 24784 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 14:22:10 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 14:22:10 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 14:22:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 14:22:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 14:22:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 14:22:11 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 14:22:11 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 14:22:11 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 14:22:11 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 14:22:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1431 ms
+2025-11-14 14:22:12 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 14:22:13 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 14:22:13 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.69 seconds (process running for 4.219)
+2025-11-14 14:22:28 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 14:22:28 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 14:22:28 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-14 14:22:28 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 14:22:28 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 14:22:29 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54c298c1
+2025-11-14 14:22:29 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 14:22:29 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=8, userName=17725431566, userPassword=$2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK, userAvatar=null, userRole=USER, userEmail=null, phone=17725431566, createdAt=2025-11-14T13:54:42, loginTime=null, isFrozen=false, isDeleted=0)
+2025-11-14 14:22:29 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 14:22:29 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK
+2025-11-14 14:22:29 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 14:22:30 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - token生成成功: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsicm9sZSI6IlVTRVIiLCJwaG9uZSI6IjE3NzI1NDMxNTY2IiwidXNlcklkIjo4LCJ1c2VybmFtZSI6IjE3NzI1NDMxNTY2In0sImV4cCI6MTc2MzE0NDU1MH0.9QGpk3LUwake30mhxv5ZU2EyJMri4A4x80v0-0c-CO0
+2025-11-14 14:22:30 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:8
+2025-11-14 14:38:07 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 14:38:07 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 14:38:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 14:38:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 14:38:11 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 16932 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 14:38:11 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 14:38:11 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 14:38:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 14:38:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 14:38:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-11-14 14:38:12 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 14:38:12 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 14:38:12 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 14:38:12 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 14:38:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1209 ms
+2025-11-14 14:38:13 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 14:38:14 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 14:38:14 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.214 seconds (process running for 3.653)
+2025-11-14 14:38:17 [http-nio-8080-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 14:38:17 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 14:38:17 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-14 14:42:25 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 14:42:25 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 14:42:30 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 10320 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 14:42:30 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 14:42:30 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 14:42:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 14:42:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 14:42:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 14:42:31 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 14:42:31 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 14:42:31 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 14:42:31 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 14:42:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1179 ms
+2025-11-14 14:42:32 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 14:42:33 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 14:42:33 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.203 seconds (process running for 3.634)
+2025-11-14 14:42:34 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 14:42:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 14:42:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-14 14:42:57 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 14:42:57 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 14:43:01 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 10204 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 14:43:01 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 14:43:01 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 14:43:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 14:43:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 14:43:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 14:43:02 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 14:43:02 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 14:43:02 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 14:43:02 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 14:43:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1188 ms
+2025-11-14 14:43:04 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 14:43:04 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 14:43:04 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.209 seconds (process running for 3.666)
+2025-11-14 14:43:09 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 14:43:09 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 14:43:09 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-14 14:43:09 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 14:43:09 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 14:43:10 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34add561
+2025-11-14 14:43:10 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 14:43:10 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=8, userName=17725431566, userPassword=$2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK, userAvatar=null, userRole=USER, userEmail=null, phone=17725431566, createdAt=2025-11-14T13:54:42, loginTime=null, isFrozen=false, isDeleted=0, token=null)
+2025-11-14 14:43:10 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 14:43:10 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK
+2025-11-14 14:43:10 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 14:43:11 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - token生成成功: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsicm9sZSI6IlVTRVIiLCJ1c2VySWQiOjgsInVzZXJuYW1lIjoiMTc3MjU0MzE1NjYifSwiZXhwIjoxNzYzMTQ1NzkwfQ.V__SG9s5hbQOtWAw99dY6HoXtXv31dgmZPHxRxtbmhA
+2025-11-14 14:43:11 [http-nio-8080-exec-1] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:8
+2025-11-14 14:43:23 [http-nio-8080-exec-3] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+### The error may exist in com/alibaba/mapper/UsersMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  user_id,user_name,user_password,user_avatar,user_role,user_email,phone,created_at,login_time,is_frozen,is_deleted,token  FROM users  WHERE is_deleted=0     AND (phone = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+; bad SQL grammar []
+2025-11-14 14:47:23 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 14:47:23 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 14:47:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 14:47:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 14:47:29 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 16392 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 14:47:29 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 14:47:29 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 14:47:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 14:47:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 14:47:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 14:47:30 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 14:47:30 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 14:47:30 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 14:47:30 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 14:47:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1247 ms
+2025-11-14 14:47:32 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 14:47:32 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 14:47:32 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.348 seconds (process running for 3.785)
+2025-11-14 14:47:36 [http-nio-8080-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 14:47:36 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 14:47:36 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-14 14:47:36 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 14:47:37 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b86d284
+2025-11-14 14:47:37 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 14:47:37 [http-nio-8080-exec-4] ERROR com.alibaba.handler.GlobalExceptionHandler - 业务异常: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+### The error may exist in com/alibaba/mapper/UsersMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  user_id,user_name,user_password,user_avatar,user_role,user_email,phone,created_at,login_time,is_frozen,is_deleted,token  FROM users  WHERE is_deleted=0     AND (phone = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'token' in 'field list'
+; bad SQL grammar []
+2025-11-14 14:55:51 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 14:55:51 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 14:55:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 14:55:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 15:00:29 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 32256 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 15:00:29 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 15:00:29 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 15:00:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 15:00:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 15:00:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2025-11-14 15:00:31 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 15:00:31 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 15:00:31 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 15:00:31 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 15:00:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1263 ms
+2025-11-14 15:00:32 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 15:00:32 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 15:00:32 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.31 seconds (process running for 3.758)
+2025-11-14 15:00:37 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 15:00:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 15:00:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-14 15:00:37 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 15:00:39 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2484f385
+2025-11-14 15:00:39 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 15:00:43 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 15:00:43 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=8, userName=17725431566, userPassword=$2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK, userAvatar=null, userRole=USER, userEmail=null, phone=17725431566, createdAt=2025-11-14T13:54:42, loginTime=null, isFrozen=false, isDeleted=0)
+2025-11-14 15:00:43 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 15:00:43 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK
+2025-11-14 15:00:43 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 15:00:44 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:8
+2025-11-14 15:00:44 [http-nio-8080-exec-6] INFO  com.alibaba.service.impl.UsersServiceImpl - 登录成功，用户ID: 8
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=8, userName=17725431566, userPassword=$2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK, userAvatar=null, userRole=USER, userEmail=null, phone=17725431566, createdAt=2025-11-14T13:54:42, loginTime=Fri Nov 14 15:00:44 CST 2025, isFrozen=false, isDeleted=0)
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$R64eB4FgBvwx9/13RM9hzuKnZQ8JOjfAFgEICyCM98LaRDE0PH7DK
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:8
+2025-11-14 15:09:00 [http-nio-8080-exec-2] INFO  com.alibaba.service.impl.UsersServiceImpl - 登录成功，用户ID: 8
+2025-11-14 15:09:57 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 15:09:57 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 15:09:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 15:09:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-14 15:16:46 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 24780 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 15:16:46 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 15:16:46 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 15:16:47 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 15:16:47 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 15:16:47 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2025-11-14 15:16:47 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 15:16:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1883 ms
+2025-11-14 15:16:49 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 15:16:49 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 15:16:49 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 4.112 seconds (process running for 11.819)
+2025-11-14 15:16:49 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 15:16:49 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 15:16:52 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Starting CommunityRentalSytemApplication using Java 17.0.16 with PID 24928 (C:\Users\Keep\IdeaProjects\Community_Rental_Sytem\target\classes started by Keep in C:\Users\Keep\IdeaProjects\Community_Rental_Sytem)
+2025-11-14 15:16:52 [main] DEBUG com.alibaba.CommunityRentalSytemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14 15:16:52 [main] INFO  com.alibaba.CommunityRentalSytemApplication - The following 1 profile is active: "dev"
+2025-11-14 15:16:53 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-14 15:16:53 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-14 15:16:53 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-11-14 15:16:53 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-14 15:16:53 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-14 15:16:53 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14 15:16:53 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-14 15:16:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1161 ms
+2025-11-14 15:16:55 [main] INFO  o.s.v.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-14 15:16:55 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-14 15:16:55 [main] INFO  com.alibaba.CommunityRentalSytemApplication - Started CommunityRentalSytemApplication in 3.202 seconds (process running for 3.775)
+2025-11-14 15:17:50 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14 15:17:50 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-14 15:17:50 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-14 15:17:51 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-14 15:17:52 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e580948
+2025-11-14 15:17:52 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-14 15:18:00 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 15:18:00 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=10, userName=17725431568, userPassword=$2a$10$SgzqVkcKysbo77.NAwSC1uz.dLBmrtscl7p/mC5KWudH.6uX/D0sa, userAvatar=null, userRole=USER, userEmail=null, phone=17725431568, createdAt=2025-11-14T15:17:55, loginTime=null, isFrozen=false, isDeleted=0)
+2025-11-14 15:18:00 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 15:18:00 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$SgzqVkcKysbo77.NAwSC1uz.dLBmrtscl7p/mC5KWudH.6uX/D0sa
+2025-11-14 15:18:00 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 15:18:01 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:10
+2025-11-14 15:18:01 [http-nio-8080-exec-3] INFO  com.alibaba.service.impl.UsersServiceImpl - 登录成功，用户ID: 10
+2025-11-14 15:18:10 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - 参数校验完成
+2025-11-14 15:18:10 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - 用户信息: Users(userId=10, userName=17725431568, userPassword=$2a$10$SgzqVkcKysbo77.NAwSC1uz.dLBmrtscl7p/mC5KWudH.6uX/D0sa, userAvatar=null, userRole=USER, userEmail=null, phone=17725431568, createdAt=2025-11-14T15:17:55, loginTime=Fri Nov 14 15:18:02 CST 2025, isFrozen=false, isDeleted=0)
+2025-11-14 15:18:10 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - 输入原始密码: 123456
+2025-11-14 15:18:10 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - 数据库存储密码: $2a$10$SgzqVkcKysbo77.NAwSC1uz.dLBmrtscl7p/mC5KWudH.6uX/D0sa
+2025-11-14 15:18:10 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - 密码匹配结果: true
+2025-11-14 15:18:10 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - Token已存储到Redis, key: user:token:10
+2025-11-14 15:18:11 [http-nio-8080-exec-4] INFO  com.alibaba.service.impl.UsersServiceImpl - 登录成功，用户ID: 10
+2025-11-14 15:18:24 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14 15:18:24 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-14 15:18:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-14 15:18:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

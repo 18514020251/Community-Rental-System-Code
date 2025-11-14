@@ -7,7 +7,7 @@ import lombok.Data;
 public class Result<T> {
     private Integer code;//业务状态码  200 -成功  .-失败
     private String message;//提示信息
-    private T data;//响应数据
+    private Object data;//响应数据
 
 
 
@@ -15,7 +15,7 @@ public class Result<T> {
 
     }
 
-    public Result(Integer code, String message, T data) {
+    public Result(Integer code, String message, Object data) {
         this.code = code;
         this.message = message;
         this.data = data;
@@ -26,11 +26,11 @@ public class Result<T> {
         this.code = code;
     }
 
-    public static <E> Result<E> success(E data) {
+    public static Result<Object> success(Object data) {
         return new Result<>(200, "操作成功", data);
     }
 
-    public static <E> Result<E> success(String message, E data) {
+    public static Result success(String message, Object data) {
         return new Result<>(200, message, data);
     }
 

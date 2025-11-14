@@ -13,7 +13,6 @@ public class MybatisMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         LocalDateTime now = LocalDateTime.now();
         this.strictInsertFill(metaObject, "createdAt", LocalDateTime.class, now);
-        this.strictInsertFill(metaObject, "loginTime", LocalDateTime.class, now);
     }
 
     @Override

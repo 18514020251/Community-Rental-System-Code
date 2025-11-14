@@ -1,44 +1,71 @@
 package com.alibaba.dto;
 
 import com.alibaba.enums.RoleStatus;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Date;
+
+/**
+ * <p>
+ * 
+ * </p>
+ *
+ * @author sister
+ * @since 2025-11-13
+ */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@ApiModel(description = "用户密码和手机号DTO")
-public class UsersRegisterDto {
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
+@TableName("users")
+@ApiModel(value="Users对象", description="")
+public class UsersRegisterDto implements Serializable {
 
-    @ApiModelProperty(value = "用户名", required = true)
+    private static final long serialVersionUID = 1L;
+
+    @TableId(value = "user_id", type = IdType.AUTO)
+    private Long userId;
+
+    @TableField("user_name")
     private String userName;
 
-    @ApiModelProperty(value = "用户密码", required = true)
-    @NotBlank(message = "密码不能为空")
+    @TableField("user_password")
     private String userPassword;
 
-    @ApiModelProperty(value = "手机号", required = true)
-    @NotBlank(message = "手机号不能为空")
-    @Pattern(regexp = "^1[3-9]\\d{9}$", message = "手机号格式不正确")
-    private String phone;
+    @TableField("user_avatar")
+    private String userAvatar;
 
-    @ApiModelProperty(value = "邮箱")
-    private String userEmail;
-
-    @ApiModelProperty(value = "是否冻结")
-    private Boolean isFrozen;
-
-    @ApiModelProperty(value = "逻辑删除")
-    private Boolean isDeleted;
-
-    @ApiModelProperty(value = "用户角色")
+    @TableField("user_role")
     private RoleStatus userRole;
 
-    // 用于接收数据库生成的ID
-    private Long userId;
+    @TableField("user_email")
+    private String userEmail;
+
+    @TableField("phone")
+    private String phone;
+
+    @TableField("created_at")
+    private LocalDateTime createdAt;
+
+    @TableField("login_time")
+    private Date loginTime;
+
+    @TableField("is_frozen")
+    private Boolean isFrozen;
+
+    @TableField("is_deleted")
+    private Integer isDeleted;
+
+    @JsonIgnore
+    private String token;
+
 }
